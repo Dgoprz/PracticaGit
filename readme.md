@@ -1,29 +1,51 @@
-# Git, Github & Gitlab
+# Practica Git
+## Respuestas
 
-En este módulo aprenderemos a manejar Git, la herramienta de control de versiones por excelencia, y también a trabajar conjuntamente con otros desarrolladores utilizando plataformas como [Github](https://github.com) o [Gitlab](https://gitlab.com).
+---
 
-Git nos permitirá, en todo momento, mantener bajo control la evolución de nuestro proyecto de código. 
+* ¿Qué comando utilizaste en el paso 11? ¿Por qué?
+  * git reset --hard HEAD~1
+  * Con el comando empleado volvemos al commit anterior y recuperamos el working copy del mismo
 
-## Requisitos
+* ¿Qué comando o comandos utilizaste en el paso 12? ¿Por qué?
+  * git reflog
+  * git reset --hard d3aaaed
+  * Empleado el reflog localizo el identificador del commit deseado y vuelvo a el con el reset 
 
-* Muchas ganas de aprender.
-* Un ordenador con conexión a internet.
-* Tener instalado Git. 
-    * Si usas Linux, probablemente ya lo tengas instalado.
-    * Si usas macOS y si tienes instalado XCode, también lo tendrás instalado. Si no tienes XCode, entonces descarga e instala Git desde [https://git-scm.com/downloads](https://git-scm.com/downloads).
-    * Si usas Windows, descarga e instala Git desde [https://git-scm.com/downloads](https://git-scm.com/downloads).
+* El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
+  * En mi caso no ha causado pero entiendo de deberia haber pasado, ya que el paso 10 git-nuestro tenia un contenido distinto al del paso 4 que es donde apunta master.
 
-## Qué vamos a aprender
+* El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
+  * Si, el conflicto es causado porque el git-nuestro en la rama styled tiene un contenido distinto al de htmlify en la mismas lineas
 
-- La historia de Larry Plotter
-- ¿Qué es git? ¿Para qué sirve? ¿Qué nos aporta?
-- Las tres zonas de Git: Working Copy/Directory, Staging area/Index/Cache y Repository.
-- Un montón de comandos: `git status`, `git add`, `git commit`, `git log`, `git reset`, `git checkout`, `git merge`, `git stash`, `git diff`, `git tag`, `git branch`, `git config`, `git rebase`, `git remote`, `git push`, `git pull`, `git fetch`, `git reflog`...
-- A escribir en [Markdown](https://daringfireball.net/projects/markdown/syntax).
-- A trabajar en equipo usando plataformas como [Github](https://github.com) o [Gitlab](https://gitlab.com).
-- A colaborar con proyectos Open Source haciendo Forks y Pull Requests.
-- Muchos comandos de Bash, el intérprete de comandos de UNIX (porque todo lo vamos a aprender usando la consola).
+* El merge del paso 21, ¿Causó algún conflicto? ¿Por qué?
+  * No, git-nuestro en ese punto esta sin cambios en mismas lineas
 
-## Por dónde puedo seguir
+* ¿Qué comando o comandos utilizaste en el paso 25?
+  * git log --graph --pretty=oneline
 
-Una vez finalices el módulo, puedes repasar con el [curso de Git Online](https://plataforma.keepcoding.io/p/curso-git-github-sourcetree) donde se ve lo que hemos visto en el módulo pero más despacito e incluso viendo cosas que no nos van a dar tiempo en clase como `git rebase`.
+* El merge del paso 26, ¿Podría ser fast forward? ¿Por qué?
+  * No, perderia acceso a un nodo del grafo
+
+* ¿Qué comando o comandos utilizaste en el paso 27?
+  * git reflog
+  * git reset 8e67d9c
+
+* ¿Qué comando o comandos utilizaste en el paso 28?
+  * git reflog
+  * git reset --hard 8e67d9c
+
+* ¿Qué comando o comandos utilizaste en el paso 29?
+  * git branch -D title
+
+* ¿Qué comando o comandos utilizaste en el paso 30?
+  * git reflog
+  * git reset --hard 15075e1
+
+* ¿Qué comando o comandos usaste en el paso 32?
+  * git reflog
+  * git reset f94a294
+
+* ¿Qué comando o comandos usaste en el punto 33?
+  * git reflog
+  * git reset acfbbe2
