@@ -13,7 +13,7 @@
   * Empleado el reflog localizo el identificador del commit deseado y vuelvo a el con el reset 
 
 * El merge del paso 13, ¿Causó algún conflicto? ¿Por qué?
-  * En mi caso no ha causado pero entiendo de deberia haber pasado, ya que el paso 10 git-nuestro tenia un contenido distinto al del paso 4 que es donde apunta master.
+  * No, el git-nuestro tenia un contenido distinto en las mismas lineas.
 
 * El merge del paso 19, ¿Causó algún conflicto? ¿Por qué?
   * Si, el conflicto es causado porque el git-nuestro en la rama styled tiene un contenido distinto al de htmlify en la mismas lineas
@@ -49,3 +49,4 @@
 * ¿Qué comando o comandos usaste en el punto 33?
   * git reflog
   * git reset acfbbe2
+
